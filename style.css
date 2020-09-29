@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+.row {
+    text-align: center;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .5s;
+}
+.flip {
+    transform: rotateY(180deg);
+}
+.front , .back {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.front {
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+.back {
+    z-index: 1;
+}
+.card:hover , .front:hover , .back:hover {
+    box-shadow: inset 0px 0px 0px 1px #000 ;
+}
+.teal {
+    background-color: teal;
+}
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.cyan {
+    background-color: cyan;
+}
+.pink {
+    background-color: pink;
+}
+.orange {
+    background-color: orange;
+}
+.no-color {
+    background-color: #eee;
+}
